@@ -1,6 +1,6 @@
 var GitHub = {
-	target: document.querySelector('#Repos'),
-	username: 'zgabievi',
+	target: null,
+	username: null,
 
 	// Get GitHub Userdata
 	getUser: function (callback) {
@@ -97,7 +97,3 @@ var GitHub = {
 		});
 	}
 };
-
-(function () {
-	GitHub.showRepos('#Repos', "zgabievi");
-})();
