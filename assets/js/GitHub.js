@@ -17,7 +17,7 @@ var GitHub = {
 		var list = [];
 
 		// Sorting...
-		self.sortByForks(repos);
+		self.sortByStars(repos);
 
 		// Clear Target
 		self.target.innerHTML = "";
@@ -92,6 +92,13 @@ var GitHub = {
 	sortByForks: function (repos) {
 		repos.sort(function (a, b) {
 			return b.forks - a.forks;
+		});
+	},
+
+	// Sort by Stars
+	sortByStars: function (repos) {
+		repos.sort(function (a, b) {
+			return b.stargazers_count - a.stargazers_count;
 		});
 	}
 };
