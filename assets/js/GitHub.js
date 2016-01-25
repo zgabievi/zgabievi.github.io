@@ -34,8 +34,8 @@ var GitHub = {
 					var repo_url = repo.homepage ? repo.homepage : repo.html_url;
 
 					list.push([
-						'<div class="repo">',
-						'	<h1 class="repo__title"><a href="' + repo_url + '" class="repo__link" target="_blank">' + repo.name + '</a>' + (repo.language ? ' <small>' + repo.language + '</small>' : '') + '</h1>',
+						'<a href="' + repo_url + '" class="repo" target="_blank">',
+						'	<h1 class="repo__title">' + repo.name + (repo.language ? ' <small>' + repo.language + '</small>' : '') + '</h1>',
 						'	<div class="repo__content">',
 						'		<p class="repo__description">' + repo.description + '</p>',
 						'		<div class="separator"></div>',
@@ -45,7 +45,7 @@ var GitHub = {
 						'			<p class="repo__data"><i class="icon ion-star"></i> ' + repo.stargazers_count + '</p>',
 						'		</div>',
 						'	</div>',
-						'</div>'
+						'</a>'
 					].join("\n"));
 				}
 			});
@@ -90,8 +90,6 @@ var GitHub = {
 
 	// Sort by Forks
 	sortByForks: function (repos) {
-		console.log(repos);
-
 		repos.sort(function (a, b) {
 			return b.forks - a.forks;
 		});
