@@ -14,10 +14,15 @@
 	<link rel="icon" href="favicon.ico" />
 </head>
 <body>
-	<header class="header"><a href="http://zgabievi.github.io/">@zgabievi</a></header>
+	<header class="header"><a href="/">@zgabievi</a></header>
 
 	<div id="Repos"></div>
 
 	<script src="assets/js/GitHub.js"></script>
+	<script>
+		window.onload = function() {
+			GitHub.showRepos('#Repos', "zgabievi");
+		};
+	</script>
 </body>
 </html>
