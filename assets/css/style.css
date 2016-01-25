@@ -334,6 +334,19 @@ body {
 }
 @media screen and (max-width: 768px) {
     body {
+        margin: 30px;
+    }
+
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .repo {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px) {
+    body {
         margin: 20px;
     }
 
