@@ -31,10 +31,8 @@ var GitHub = {
 
 				// Check for {username}.github.io
 				if ((repo.name != (self.username.toLowerCase() + '.github.io')) && has_forks != true) {
-					var repo_url = repo.homepage ? repo.homepage : repo.html_url;
-
 					list.push([
-						'<a href="' + repo_url + '" class="repo" target="_blank">',
+						'<a href="' + repo.html_url + '" class="repo" target="_blank">',
 						'	<h1 class="repo__title">' + repo.name + (repo.language ? ' <small>' + repo.language + '</small>' : '') + '</h1>',
 						'	<div class="repo__content">',
 						'		<p class="repo__description">' + repo.description + '</p>',
