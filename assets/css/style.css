@@ -235,6 +235,7 @@ body {
     flex-direction: column;
     -webkit-justify-content: center;
     justify-content: center;
+    text-decoration: none;
 }
 .repo::before {
     position: absolute;
@@ -257,14 +258,11 @@ body {
     margin: 0;
     font-size: 1.875em;
     text-align: center;
+    color: #3ab1c8;
 }
 .repo__title small {
     font-size: 12px;
     color: #a0a0a0;
-}
-.repo__link {
-    text-decoration: none;
-    color: #3ab1c8;
 }
 .repo__description {
     margin: 0;
