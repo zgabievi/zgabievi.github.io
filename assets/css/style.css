@@ -96,8 +96,7 @@ button {
 button, select {
     text-transform: none;
 }
-button, html input[type="button"],
-input[type="reset"], input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
 }
@@ -217,6 +216,7 @@ body {
     width: 100%;
 }
 .repo {
+    box-sizing: border-box;
     padding: 45px 45px 30px;
     position: relative;
     color: inherit;
@@ -315,4 +315,26 @@ body {
 }
 .header a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1680px) {
+    .repo {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .repo {
+        width: 33.3%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .repo {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .repo {
+        padding: 25px 25px 20px;
+        width: 100%;
+    }
 }
