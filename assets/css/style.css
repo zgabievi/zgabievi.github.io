@@ -333,6 +333,14 @@ body {
     }
 }
 @media screen and (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .header {
+        margin-bottom: 20px;
+    }
+
     .repo {
         padding: 25px 25px 20px;
         width: 100%;
