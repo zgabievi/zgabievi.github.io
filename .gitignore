@@ -1,0 +1,6 @@
+### Sass template
+.sass-cache/
+*.map
+
+### IntelliJ
+.idea/
